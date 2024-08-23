@@ -93,9 +93,10 @@ img{
     justify-content: flex-end;
 }
 
+
 .workBox h2{
     font-weight: normal;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 
@@ -130,6 +131,8 @@ img{
 .yearBox i{
     color:  white;
 }
+
+
 
 
 #divBox{
@@ -229,7 +232,7 @@ img{
 #workBoxes{
     width: 100%;
     height: fit-content;
-    background-color: rgb(255, 242, 0);
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -422,14 +425,6 @@ img{
     }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 @keyframes bounceIn {
     from {
@@ -544,8 +539,51 @@ img{
     }
 
     .workName{
+        width: 94%;
+    }
+
+    .works p{
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    #addWork{
+        margin-left: 3.2%;
+    }
+
+    #weekDays{
+        gap: 19px;
         width: 100%;
     }
+
+    .dateBox{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #weekDays p{
+        font-size: 11px;
+    }
+
+    .searchBox input{
+        width: 100%;
+    }
+    
+    #searchIcon{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        text-align: right;
+        margin-left: 5px;
+    }
+
+    .datesBox{
+        margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
 
 
