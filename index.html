@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+  
+            
+
+            <div class="sidebar">
+
+                <div class="top">
+                    <b> Quick  Action</b>
+                    <p id="logWeight"><i class="fa-sharp fa-solid fa-person"></i>Log Weight</p>
+                    <p><i class="fa-solid fa-arrow-right"></i>Add Exercise</p>
+                    <p><i class="fa-solid fa-calendar"></i>New workout</p>
+                </div>
+
+                <div class="bottom">
+                    <b>Navigation</b>
+                    <p><i class="fa-solid fa-calendar"></i>Today</p>
+                    <p><i class="fa-solid fa-calendar"></i>Upcoming</p>
+                    <p><i class="fa-solid fa-arrow-right"></i>Exercises</p>
+                    <p><i class="fa-sharp fa-solid fa-person"></i>Weight Tracker</p>
+                   <p><i class="fa-solid fa-circle"></i>Image Groups</p>
+                </div>
+
+            </div>
+
+            <div class="homePage">
+
+
+
+                <div class="workBox">
+                    
+                    <h2>Calendar / Today Work</h2>
+                  
+
+
+            
+                    <div class="dateBox">
+                        <div class="days">
+                            <i class="fa-solid fa-arrow-left" id="prevWeek"></i>
+                            <div class="days" id="weekDays"></div>
+                            <i class="fa-solid fa-arrow-right" id="nextWeek"></i>
+                        </div>
+            
+                        <div class="yearBox">
+                            <i class="fa-solid fa-arrow-left" id="prevMonth"></i>
+                            <p id="currentMonthYear" class="year">August 2024</p>
+                            <i class="fa-solid fa-arrow-right" id="nextMonth"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="divBox">
+                    <div class="headerday">
+                        <div class="datesBox">
+                            <label>Due date <p>28 Feb 2024</p></label>
+                            <label>Due day <p> Monday</p></label>
+                        </div>
+     
+                        
+                        <div class="searchBox">
+                            <input type="text" placeholder="Search work" id="search">
+                            <button id="searchIcon"><i class="fa-solid fa-search"></i></button>
+                            <div id="searchEngineBox">
+
+                            </div>
+                        </div>
+
+  
+
+                    </div>
+ 
+                    <button id="addWork">New Task<i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <div class="works">
+                    <p class="todo" id="todo">Todo <i class="fa-solid fa-spinner fa-check fa-faster"></i></p>
+                    <p class="Progress" id="progress">In Progress <i class="fa-solid fa-check fa-spin"></i></p>
+                    <p class="Completed" id="completed">Completed <i class="fa-solid fa-check fa-spin"></i> </p>
+                    <p class="Overdue" id="overdue">Overdue  <i class="fa-solid fa-check fa-spin"></i></p>
+                </div>
+             
+                <div id="workBoxes"></div>
+                <div id="progressBox"></div>
+                <div id="CompletedBox"></div>
+                <div id="OverdueBox"></div>
+  
+                <div id="pagination">
+                    <div id="paginationControls"></div>
+                </div>
+
+            </div>
+       
+
+            
+
+
+
+        </div>
+
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

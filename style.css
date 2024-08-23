@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+img{
+    width: 20px;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+    padding: 10px 10px;
+    gap: 15px;
+}
+
+.sidebar{
+    background-color: #efefef;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 10px;
+    display: none;
+}
+
+.top , .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top .bottom , b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: dodgerblue;
+    text-shadow: 1px 1px 1px #b7b7b7,
+                 1px 1px 1px #e4e4e4,
+                 1px 1px 1px #d3d3d3,
+                1px 1px 1px #919191;
+}
+
+.top .bottom , p{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Calibri;
+    cursor: pointer;
+}
+
+.top .bottom , i{
+    color: #8f8f8f;
+}
+
+.homePage{
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.workBox{
+    width: 100%;
+    height: 150px;
+    background-image: url('trees-wood-yellow-wood-oak.jpg');
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+}
+
+
+
+
+.workBox{
+    display: flex;
+    font-family: Calibri;
+    justify-content: flex-end;
+}
+
+.workBox h2{
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+
+
+#weekDays{
+    color: black;
+    display: flex;
+    color: white;
+    gap: 50px;
+    padding: 0 0px;
+    align-items: flex-end;
+}
+
+.days i{
+    cursor: pointer;
+}
+
+.dateBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.days, .yearBox{
+    display: flex;
+    gap: 20px;
+}
+
+.days i{
+    color:  white;
+}
+
+.yearBox i{
+    color:  white;
+}
+
+
+#divBox{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.headerday{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.datesBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchBox{
+    padding: 10px;
+    position: relative;
+}
+
+.searchBox input{
+    padding: 8px 3px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(81, 101, 122);
+    border-radius: 3px;
+    width: 250px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.searchBox i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.searchBox button{
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.headerday label{
+    display: flex;
+    gap: 10px;
+}
+
+.headerday label p{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px 0 #d3d3d3;
+    border-radius: 5px;
+    padding: 3px 20px;
+}
+
+#addWork{
+    width: fit-content;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 119, 0);
+    display: flex;
+    gap: 8px;
+    box-shadow: 0 0 3px 0 #9e9e9e;
+    border: 2px solid #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#addWork i{
+    color: white;
+    font-size: 12px;
+    background-color: rgb(229, 111, 8);
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#workBoxes{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 242, 0);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+    display: none;
+}
+
+.works{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.works p{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 9px 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.workName{
+    width: 24%;
+    height: 150px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  position: relative;
+  justify-content: center;
+}
+
+.workName p{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    outline: none;
+}
+
+.workName h1{
+    margin-left: 8px;
+    font-size: 23px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.workName i{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+        color: rgb(0, 0, 0);
+    border: 1.5px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.works i{
+    font-size: 7px;
+    background-color: rgb(229, 111, 8);
+    padding: 3px;
+    color: white;
+    border-radius: 50px;
+}
+
+.workTime{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+.works .todo{
+    background-color: #FFDDC1;
+}
+
+.works .Progress{
+    background-color: #C1FFD7;
+}
+
+.works .Completed{
+    background-color: #C1D4FF;
+}
+
+.works .Overdue{
+    background-color: #E1C1FF;
+}
+
+
+
+#pagination{
+   display: flex;
+   justify-content: center;
+   height: 30px;
+   gap: 20px;
+   align-items: center;
+   margin-top: 10px;
+}
+
+
+#pagination button{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 2px 0 ;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#pagination i{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+#searchEngineBox{
+    width: 260px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    z-index: 100000;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    position: absolute;
+}
+
+.searchWorkDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(217, 252, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #000000dd;
+    border-radius: 10px;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sidebar {
+    animation: slideInLeft 1s ease;
+}
+
+.homePage {
+    animation: fadeIn 1s ease;
+}
+
+
+
+.works p i {
+    animation: rotateIn 1s infinite;
+}
+
+.days i, .yearBox i {
+    transition: transform 0.3s ease;
+}
+
+.days i:hover, .yearBox i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.addWorkButtonAnimation {
+    animation: popIn 0.5s ease-out;
+}
+
+.searchAnimation {
+    animation: slideUp 0.5s ease-out;
+}
+
+.newTaskAnimation {
+    animation: popIn 0.5s ease-in;
+}
+
+.hideElement {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+
+
+.check{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    border-radius: 0px;
+}
+
+
+
+
+
+@media(max-width: 412px){
+    .works{
+        flex-direction: column;
+    }
+
+    .headerday{
+        flex-direction: column;
+    }
+
+    .workName{
+        width: 100%;
+    }
+}
+
+
+
+#progressBox{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#CompletedBox{
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#OverdueBox{
+    width: 100%;
+    height: 200px;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+}
