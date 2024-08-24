@@ -37,6 +37,7 @@ function updateWeek() {
         if (day.toDateString() === new Date().toDateString()) {
             dayElement.style.backgroundColor = 'white';
             dayElement.style.color = 'black';
+            dayElement.style.borderRadius = "5px";
             dayElement.classList.add('current');
             dayElement.classList.add('selected'); // Default selected banaye
             selectedDate = day; // Current date ko select kare
@@ -56,6 +57,7 @@ function updateWeek() {
             if (!dayElement.classList.contains('current')) {
                 dayElement.style.backgroundColor = 'white';
                 dayElement.style.color = 'black';
+                dayElement.style.borderRadius = "5px"
             }
         });
 
